@@ -64,6 +64,7 @@ def recommend():
     if isinstance(recommendations_or_message, str): # Check if it's the "not available" message
         return render_template('recommend.html', book_name=user_input_book, not_found_message=recommendations_or_message) # Pass message, empty top_books
     else:
+        print(recommendations_or_message)
         return render_template('recommend.html', book_name=user_input_book, recommendations=recommendations_or_message, not_found_message="")
 
 if __name__ == '__main__':
