@@ -68,4 +68,5 @@ def recommend():
         return render_template('recommend.html', book_name=user_input_book, recommendations=recommendations_or_message, not_found_message="")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0",debug=True)
+
