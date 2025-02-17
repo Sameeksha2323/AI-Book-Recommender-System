@@ -1,1 +1,1 @@
-# ML-Book-Recommender-System
+# AI-Book-Recommender-System
