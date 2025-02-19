@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Project Website Has Been Temporarily Moved To New Location.</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+            color: #333;
+            background-image: url('/static/background1.jpg'); /* Replace with your image file name */
+    background-size: cover;  /* Ensure it covers the whole screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+    background-attachment: fixed; /* Keep it fixed when scrolling */
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+        h1 {
+            color: #007bff;
+        }
+        a {
+            color: #00a65a; /* Green color similar to your navbar */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .explanation {
+            margin-top: 20px;
+            text-align: left;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Project Website Has Been Temporarily Moved To New Location.</h1>
+        <p>
+            <a href="{{ new_website_url }}">Click here to visit the new website.</a>
+        </p>
+        <p>
+            We apologize for the inconvenience, but the original version of our website experienced memory limitations and could not be reliably hosted here.
+        </p>
+        <p>
+            The website has been moved to a new, more robust hosting platform.
+            Please visit the new website by clicking the link below:
+        </p>
+        
+
+        <div class="explanation">
+            <h3>Why I Had To Do This?</h3>
+            <p>
+                [**Placeholder for detailed explanation of memory issues and website move. You can edit this paragraph in the `templates/index.html` file to add your specific explanation. For example, you could explain:**]
+            </p>
+            
+        </div>
+    </div>
+</body>
+</html>
