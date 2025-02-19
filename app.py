@@ -68,6 +68,5 @@ def recommend():
         return render_template('recommend.html', book_name=user_input_book, recommendations=recommendations_or_message, not_found_message="")
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 10000))  # Use Render's assigned port
-    app.run(host="0.0.0.0", port=port)
+    app.run(debug=True)
 
